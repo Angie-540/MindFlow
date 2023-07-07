@@ -1,33 +1,25 @@
-import { ContactComponent } from './pages/contact/contact.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ArticlesComponent } from './pages/articles/articles.component';
-import { MindfulnessComponent } from './pages/mindfulness/mindfulness.component';
-import { TherapyComponent } from './pages/therapy/therapy.component';
-
+import { ResourcesComponent } from './pages/resources/resources.component';
+import { DiscoverComponent } from './pages/discover/discover.component';
 const routes: Routes = [ 
-  {
-    path: "Home",
+  { 
+    path: "**",
     component: HomeComponent
   },
   {
-    path: "Articles",
-    component: ArticlesComponent
+    path: "home",
+    component: HomeComponent
   },
   {
-    path: "Mindfulness",
-    component: MindfulnessComponent
+    path: "resources",
+    component: ResourcesComponent
   },
   {
-    path: "Therapy",
-    component: TherapyComponent
-  },
-  {
-    path: "Contact",
-    component: ContactComponent
-  },
-
+    path: 'discover',
+    component: DiscoverComponent
+  }
 ];
 
 @NgModule({
