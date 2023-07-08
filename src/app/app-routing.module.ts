@@ -4,23 +4,32 @@ import { HomeComponent } from './pages/home/home.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 import { DiscoverComponent } from './pages/discover/discover.component';
 import { WellBeingComponent } from './pages/well-being/well-being.component';
-import { discardPeriodicTasks } from '@angular/core/testing';
+
 const routes: Routes = [ 
-  { 
-    path: "**",
-    component: DiscoverComponent
+  // { 
+  //   path: "**",
+  //   component: HomeComponent
+  // },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch : 'full'
   },
   {
     path: 'home',
     component: HomeComponent
   },
   {
-    path: 'resources',
-    component: ResourcesComponent
-  },
-  {
     path: 'discover',
     component: DiscoverComponent
+  },
+  {
+    path: 'well-being',
+    component: WellBeingComponent
+  },
+  {
+    path: 'resources',
+    component : ResourcesComponent
   }
 ];
 
