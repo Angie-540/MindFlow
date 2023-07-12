@@ -3,3 +3,11 @@ position: absolute;
   top: 10%;
   left: 20%;
 } */
+
+ .btn {
+  transition: all .45s ease;
+ }
+
+.btn:hover {
+  transform: scale(0.9);
+}

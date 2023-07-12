@@ -1,0 +1,17 @@
+.box {
+    transition: all .45s ease;
+   }
+  
+  .box:hover {
+    transform: scale(0.9);
+  }
+
+.box a{
+    transition: all .45s ease;
+}
+
+.box a:hover {
+    letter-spacing: 1px;
+    background: #ffffff;
+    color:var(--text-color);
+}
